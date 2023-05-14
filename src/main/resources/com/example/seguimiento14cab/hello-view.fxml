@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimiento14cab.HelloController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="465.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="119.0" />
+      <TableView fx:id="tablaGestionTv" layoutX="175.0" layoutY="132.0" prefHeight="148.0" prefWidth="269.0">
+        <columns>
+          <TableColumn fx:id="montoC" prefWidth="74.0" text="Monto" />
+          <TableColumn fx:id="descripcionC" prefWidth="105.0" text="Descripcion" />
+            <TableColumn fx:id="fechaC" prefWidth="89.0" text="Fecha" />
+        </columns>
+      </TableView>
+      <Button fx:id="gastosBt" layoutX="167.0" layoutY="301.0" mnemonicParsing="false" onAction="#viewGastosBt" text="Gastos" />
+      <Button fx:id="ingresosBt" layoutX="279.0" layoutY="301.0" mnemonicParsing="false" onAction="#viewIngresosBt" text="Ingresos" />
+      <Button fx:id="resumenBt" layoutX="397.0" layoutY="301.0" mnemonicParsing="false" onAction="#viewBothBt" text="Resumen" />
+      <Text layoutX="220.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Money Mill">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="registrarMovimientoBt" layoutX="244.0" layoutY="92.0" mnemonicParsing="false" onAction="#regMovimiento" text="Registrar Movimiento" />
+      <Label alignment="CENTER" layoutX="469.0" layoutY="111.0" prefHeight="38.0" prefWidth="99.0" text="Balance" />
+      <Label fx:id="balanceLb" layoutX="481.0" layoutY="149.0" prefHeight="25.0" prefWidth="75.0" />
+      <Button fx:id="refreshBt" layoutX="493.0" layoutY="188.0" mnemonicParsing="false" onAction="#balance" text="Refresh" />
+   </children>
+</AnchorPane>

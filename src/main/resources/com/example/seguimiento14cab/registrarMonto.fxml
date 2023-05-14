@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimiento14cab.RegistrarMontoController">
+   <children>
+      <Text layoutX="216.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="registrarBt" layoutX="268.0" layoutY="311.0" mnemonicParsing="false" onAction="#RegistrarMoney" text="Registrar" />
+      <VBox alignment="TOP_CENTER" layoutX="201.0" layoutY="117.0" prefHeight="139.0" prefWidth="175.0" spacing="20.0">
+         <children>
+            <ComboBox fx:id="ingresoGastoCb" prefHeight="25.0" prefWidth="166.0" promptText="ingreso/gasto" />
+            <TextField fx:id="montoTf" prefHeight="24.0" prefWidth="179.0" promptText="Monto" />
+            <TextField fx:id="descripcionTf" prefHeight="24.0" prefWidth="179.0" promptText="Descripcion" />
+            <TextField fx:id="fechaTf" promptText="Fecha" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
