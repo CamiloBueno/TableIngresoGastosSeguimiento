@@ -63,7 +63,7 @@ public class RegistrarMontoController implements Initializable {
         }
         abrirVentana();
 
-        registrarBt.
+
     }
 
     public int compareTo(RegistrarMontoController register){
